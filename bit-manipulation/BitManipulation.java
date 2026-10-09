@@ -1,12 +1,12 @@
 class BitManipulation {
-    public static void main(String[] args){
-        long n=15;
-        int k=3;
-        System.out.println(BitManipulation.getBit(n,k));
-        System.out.println(BitManipulation.setBit(n,k));
-        System.out.println(BitManipulation.clearBit(n,k));
-        System.out.println(BitManipulation.toggleBit(n,k));
-    }
+    // public static void main(String[] args){
+    //     long n=15;
+    //     int k=3;
+    //     System.out.println(BitManipulation.getBit(n,k));
+    //     System.out.println(BitManipulation.setBit(n,k));
+    //     System.out.println(BitManipulation.clearBit(n,k));
+    //     System.out.println(BitManipulation.toggleBit(n,k));
+    // }
     public static long getBit(long n, int k) {
         // return 1 if the k-th bit of n is set, otherwise 0
         return (n&(1<<k))==0?0:1;
