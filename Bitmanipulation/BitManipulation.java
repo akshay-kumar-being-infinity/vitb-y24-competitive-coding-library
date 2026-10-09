@@ -26,7 +26,7 @@ class BitManipulation {
         return false;
     }
 
-    public long countSetBits(long n) {
+    public static long countSetBits(long n) {
         int count=0;
         while(n>0){
             n=n&(n-1);
