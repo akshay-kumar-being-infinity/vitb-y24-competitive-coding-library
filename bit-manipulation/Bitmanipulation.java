@@ -17,5 +17,6 @@ class BitManipulation {
     public static long toggleBit(long n, int k) {
         // flip the k-th bit
         return (n^(1<<k));
+        
     }
 }
