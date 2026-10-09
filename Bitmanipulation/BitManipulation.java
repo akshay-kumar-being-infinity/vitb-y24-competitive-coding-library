@@ -24,4 +24,13 @@ class BitManipulation {
         }
         return false;
     }
+    public static int countSetBits(long n) {
+    // return the number of bits set to 1 in n (n >= 0)
+        int count=0;
+        while(n>0){
+            n=n&(n-1);
+            count++;
+        }
+        return count;
+    }
 }
