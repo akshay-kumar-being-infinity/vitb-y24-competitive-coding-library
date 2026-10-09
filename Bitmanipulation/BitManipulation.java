@@ -24,4 +24,12 @@ class BitManipulation {
         }
         return false;
     }
+    public static long newbranchsetbitc(long n, int k) {
+        int count=0;
+        while(n>0){
+            n=(n&(n-1));
+            count++;
+        }
+        return count;
+    }
 }
