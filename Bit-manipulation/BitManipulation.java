@@ -18,13 +18,6 @@ class BitManipulation {
         // flip the k-th bit
         return (n^(1l<<k));
     }
-    public static long countSetBits(long n) {
-        // count the number of set bits in n
-        long count=0;
-        while(n>0){
-            count+=n&1;
-            n>>=1;
-        }
-        return count;
+    
     }
 }
