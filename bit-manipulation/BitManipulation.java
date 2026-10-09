@@ -18,4 +18,5 @@ class BitManipulation {
         // flip the k-th bit
         return (n^(1<<k));
     }
+    //check
 }
