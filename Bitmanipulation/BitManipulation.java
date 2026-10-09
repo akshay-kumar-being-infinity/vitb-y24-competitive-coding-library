@@ -24,4 +24,14 @@ class BitManipulation {
         }
         return false;
     }
+    public static long countbits(long num){
+        long c=0;
+        while(num!=0){
+            if((num&1)==1){
+                c++;
+                nums>>=1;
+            }
+        }
+        return c;
+    }
 }
