@@ -16,6 +16,10 @@ class BitManipulation {
     public static long toggleBit(long n, int k) {
         n=(n^(1L<<k));
         return n;
+    }
 
+    public static boolean isPowerOfTwo(long n) {
+        // if set bit count is 1, then n is a power of two
+        return (n>0 && (n&(n-1))==0);
     }
 }
