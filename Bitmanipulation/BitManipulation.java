@@ -24,4 +24,12 @@ class BitManipulation {
         }
         return false;
     }
+    public static long countSetBits(long n){
+        long c=0;
+        while(n>0){
+            if((n&1)==1) c++;
+            n=n>>1;
+        }
+        return c;
+    }
 }
