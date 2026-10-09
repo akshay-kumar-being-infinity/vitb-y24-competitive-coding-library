@@ -18,4 +18,12 @@ class BitManipulation {
         return n;
 
     }
+
+    public static boolean isPowerOfTwo(long n) {
+        if((n&(n-1))==0){
+            return true;
+        }
+        return false;
+    // return true if n is a power of two, otherwise false
+    }
 }
