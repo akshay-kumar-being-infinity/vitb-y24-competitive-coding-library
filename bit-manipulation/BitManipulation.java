@@ -9,7 +9,7 @@ class BitManipulation {
     // }
     public static long getBit(long n, int k) {
         // return 1 if the k-th bit of n is set, otherwise 0
-        return (n&(1L<<k))==0?0:1;
+        return (n&(1L<<k))==0?0:1L;
     }
 
     public static long setBit(long n, int k) {
